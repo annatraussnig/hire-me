@@ -9,7 +9,6 @@ hidePath('#hair4');
 
 window.addEventListener("scroll", function(e) {
     toggleClass('#visit-card', [0.01, 2], 'hide-small');
-    toggleClass('#scroll', [0.01, 2], 'hide');
 
     // bulb appears
     changeOnScroll('#lightbulb', [0.03, 0.04], [30, 18], setRadius);
@@ -77,7 +76,6 @@ window.addEventListener("scroll", function(e) {
     changeOnScroll('#hair3', [0.85, 0.93], [1, 0], setOpacity);
     changeOnScroll('#hair4', [0.85, 0.93], [1, 0], setOpacity);
     toggleClass('#contact', [0.78, 1.3], 'reveal-p') // TEXT
-    toggleClass('#homepage', [0.95, 1.3], 'reveal') // TEXT
 
     setVisitCardColor();
 });
