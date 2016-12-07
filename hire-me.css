@@ -1,0 +1,232 @@
+body {
+    margin: 0 !important;
+    height: 7000px;
+    position: relative;
+    font-size: 100%;
+    background-color: #F2F1EF;
+}
+
+#close {
+    position: fixed;
+    top: 1vh;
+    right: 2%;
+    z-index: 3;
+    font-size: 200%;
+}
+
+#close span { 
+    font-size: 0.4em; 
+    vertical-align: super;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition:  opacity .7s ease-in-out;
+    -o-transition:  opacity .7s ease-in-out;
+    -ms-transition:  opacity .7s ease-in-out;
+    transition: opacity 0.7s;
+}
+
+#scroll {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    z-index: 4;
+}
+
+#scroll i, #close i {
+    font-weight: 800 !important;
+} 
+
+/*TEXT*/
+h1, h2, h3 { 
+    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 3.1em;
+    line-height: 30%;
+}
+
+h2 {
+    font-size: 2.4em;
+    line-height: 60%;
+}
+
+h3 {
+    font-size: 1.7em;
+    line-height: 26%;
+}
+
+p { font-size: 1.4em; }
+p, span { font-family: Lato, Arial, Helvetica, sans-serif; }
+
+p, span, a, a:visited, a:active { color: #3A3A3A; }
+a:hover { color: #0F564C; }
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.copy {
+    background-color: #F2F1EF;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 40%;
+    right: 0;
+    height: 100vh;
+    margin: 0 5%;
+}
+
+.copy p {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    margin-left: -3px;
+    -webkit-transition: opacity 1.5s, margin 1s;
+    transition: opacity 1.5s, margin 1s;
+    -moz-transition:  opacity 1.5s, margin 1s;
+    -o-transition:  opacity 1.5s, margin 1s;
+    -ms-transition:  opacity 1.5s, margin 1s;
+}
+
+.copy p.reveal-p { 
+    opacity: 1; 
+    margin-left: 0;
+}
+
+#list { top: 12vh;  }
+#idea { bottom: 65vh; padding-left: 10vh; font-size: 1.6em; }
+#no-dev { top: 5vh; padding-right: 5vh; font-size: 1.6em; }
+#no-problem { top: 40vh; font-size: 1.8em; }
+#qualities { top: 5vh; }
+#vision { top: 30vh; padding-right: 12vh; font-size: 1.6em; }
+#interest { top: 40vh; font-size: 1.8em; }
+#contact { top: 8vh; }
+
+#visit-card {
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+    right: 0;
+    text-align: right;
+    background-color: #F2F1EF;
+    color: #336E7B;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    -moz-transition:  opacity .3s;
+    -o-transition:  opacity .3s;
+    -ms-transition:  opacity .3s;
+}
+
+.hide { opacity: 0; }
+.reveal { opacity: 1 !important; }
+
+.hair1-color { color: #36d7b7 !important; }
+.hair2-color { color: #81cfe0 !important; }
+.hair3-color, .hair3-color a { color: #1ba39c !important; }
+.hair4-color, .hair4-color a { color: #3498db !important; }
+
+
+/*ANIMATION*/
+
+#animation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    background: -webkit-linear-gradient(#336E7B, #1F282F, #679283, #d35400);
+    background: -o-linear-gradient(#336E7B, #1F282F, #679283, #d35400);
+    background: -moz-linear-gradient(#336E7B, #1F282F, #679283, #d35400);
+    background: linear-gradient(#336E7B, #1F282F, #679283, #d35400);
+    border-right: 1px solid #ECECEC;
+}
+
+svg {
+    overflow: visible;
+}
+
+#light-fitting-container, #lightbulb-container {
+    position: fixed;
+    top: -5vh;
+    left: 20%;
+    width: 8vh;
+    height: 30vh;
+    margin: 0 0 0 -4vh;
+}
+
+#face-container {
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    height: 43vh;
+    width: 50vh;
+    margin: 0 0 0 -25.5vh;
+}
+
+
+@media only screen and (max-width: 800px) {
+    body { 
+        font-size: 80%; 
+        height: 6000px;
+    }
+
+    #animation {
+        width: 100%;
+        border-right: none;
+    }
+
+    #light-fitting-container, #lightbulb-container, #face-container {
+        left: 50%;
+    }
+
+    .hide-small {
+        opacity: 0 !important;
+    }
+
+    .remove-small {
+        display: none !important;
+    }
+
+    .copy {
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        top: auto;
+        height: 6em;
+        text-align: center !important;
+        background: transparent;
+    }
+
+    h1, h2, h3 {
+        margin-right: 5%;
+    }
+
+    .copy p {
+        position: absolute !important;
+        top: auto !important;
+        bottom: 3vh !important;
+        width: 100% !important;
+        font-size: 1.4em !important;
+        margin: 0 !important;
+        padding: 5px !important;
+    }
+
+    p, span, a, #scroll { 
+        color: #b3c9bf !important; 
+        font-weight: 700 !important;
+    }
+
+    .text-right { text-align: center; }
+
+    #no-dev { margin-bottom: 10vh !important; }
+}
